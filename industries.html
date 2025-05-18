@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OasisNX // Industries</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: url('testimg1.png') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      position: relative;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      z-index: -1;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 4rem auto;
+      padding: 2rem;
+    }
+
+    h1 {
+      text-align: center;
+      color: #ffffff;
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      text-shadow: 0 0 12px #ffffff88;
+    }
+
+    .industry-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 250px;
+      margin-bottom: 2rem;
+      background-size: cover;
+      background-position: center;
+      border-radius: 15px;
+      padding: 2rem;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .industry-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 0;
+    }
+
+    .industry-card:hover {
+      transform: scale(1.02);
+    }
+
+    .industry-text {
+      position: relative;
+      z-index: 1;
+    }
+
+    .industry-text h2 {
+      color: #ffffff;
+      font-size: 1.6rem;
+      margin-bottom: 0.5rem;
+      text-shadow: 0 0 8px #ffffffaa;
+    }
+
+    .industry-text p {
+      color: #eeeeee;
+      font-size: 1.05rem;
+      line-height: 1.6;
+      text-shadow: 0 0 6px #ffffff22;
+    }
+
+    .back-button {
+      display: block;
+      margin: 3rem auto 0;
+      width: fit-content;
+      padding: 0.75rem 1.5rem;
+      background: #ffffff;
+      color: #000;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      box-shadow: 0 0 15px #ffffff99;
+    }
+
+    .back-button:hover {
+      background: #dddddd;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Industries We're Shaping</h1>
+
+    <div class="industry-card" style="background-image: url('1.png');">
+      <div class="industry-text">
+        <h2>Personal AI Helper</h2>
+        <p>Our AI systems are built to make your life easier—super smooth with files and packed with millions of fun personalities to pick from. Whether you're working or just messing around, you're gonna have a great time with us.</p>
+      </div>
+    </div>
+
+    <div class="industry-card" style="background-image: url('2.png')">
+      <div class="industry-text">
+        <h2>Helping Companies Track Data with AI</h2>
+        <p>Automate your business by letting the AI interface do the work. With advanced capabilities such as task tracking, assigning responsibilities, and acting as an optimized product manager, you're set for efficiency.</p>
+      </div>
+    </div>
+
+    <div class="industry-card" style="background-image: url('3.png');">
+      <div class="industry-text">
+        <h2>Powershell Integration with Our OMEGA Model</h2>
+        <p>STAY TUNED!</p>
+      </div>
+    </div>
+
+    <a href="index.html" class="back-button">← Back to Home</a>
+  </div>
+
+</body>
+</html>
