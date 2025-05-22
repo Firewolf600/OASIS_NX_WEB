@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OasisNX // Showcase</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f4f4f4;
+      padding: 2rem;
+      color: #333;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card-wrapper {
+      position: relative;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 1rem 1.2rem;
+    }
+
+    .card-date {
+      font-size: 0.8rem;
+      color: #888;
+      margin-bottom: 0.3rem;
+    }
+
+    .card-title {
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .card-description {
+      font-size: 0.9rem;
+      color: #444;
+      margin-bottom: 0.8rem;
+    }
+
+    .card-author {
+      font-size: 0.85rem;
+      color: #555;
+      font-weight: bold;
+    }
+
+    .heart {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: white;
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="grid-container">
+
+    <a class="card-wrapper" href="https://drive.google.com/your-link-1" target="_blank">
+      <div class="card">
+        <img src="OasisnxDEF_SPP.png" alt="terminal">
+        <div class="card-content">
+          <div class="card-date">May 20, 2025</div>
+          <div class="card-title">PERSONALITY ENGINE</div>
+          <div class="card-description">try out personality engine!, it makes sure that everytime u run the system u get a new personality every time</div>
+          <div class="card-author">Oasis Dev Team</div>
+        </div>
+      </div>
+      <div class="heart">&#10084;</div>
+    </a>
+
+    <a class="card-wrapper" href="https://drive.google.com/your-link-2" target="_blank">
+      <div class="card">
+        <img src="OasisnxDEF_P[M].png" alt="terminal">
+        <div class="card-content">
+          <div class="card-date">Apr 28, 2025</div>
+          <div class="card-title">OG OasisNX Male assistant personality</div>
+          <div class="card-description">Coming soon.</div>
+          <div class="card-author">Oasis Dev Team</div>
+        </div>
+      </div>
+      <div class="heart">&#10084;</div>
+    </a>
+
+    <a class="card-wrapper" href="https://drive.google.com/your-link-3" target="_blank">
+      <div class="card">
+        <img src="OasisnxDEF_P[F].png" alt="terminal">
+        <div class="card-content">
+          <div class="card-date">Mar 18, 2025</div>
+          <div class="card-title">OG OasisNX Female assistant personality</div>
+          <div class="card-description">Coming soon.</div>
+          <div class="card-author">Oasis Dev Team</div>
+        </div>
+      </div>
+      <div class="heart">&#10084;</div>
+    </a>
+
+  </div>
+
+</body>
+</html>

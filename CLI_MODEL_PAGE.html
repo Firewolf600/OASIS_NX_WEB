@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OasisNX // CLI Showcase</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #0a0a0a;
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    .card {
+      background: #101010;
+      padding: 2rem;
+      margin: 4rem auto;
+      max-width: 600px;
+      text-align: center;
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+    }
+
+    .card img {
+      width: 200px;
+      margin-bottom: 1rem;
+      border-radius: 12px;
+    }
+
+    .card h2 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      font-size: 1rem;
+      color: #ccc;
+    }
+
+    .explore-btn {
+      margin-top: 1rem;
+      padding: 0.75rem 2rem;
+      background: red;
+      border: none;
+      color: white;
+      font-weight: bold;
+      border-radius: 12px;
+      cursor: pointer;
+      font-size: 1rem;
+      box-shadow: 0 0 10px red;
+      transition: transform 0.2s;
+    }
+
+    .explore-btn:hover {
+      transform: scale(1.05);
+    }
+
+    #cli-showcase {
+      padding: 4rem 2rem;
+      background: #111;
+    }
+
+    #cli-showcase h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: white;
+    }
+
+    .cli-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .cli-card {
+      background: #1c1c1c;
+      border: 1px solid #333;
+      border-radius: 12px;
+      padding: 1.5rem;
+      max-width: 300px;
+      width: 100%;
+      text-align: center;
+      transition: transform 0.2s;
+      cursor: pointer;
+    }
+
+    .cli-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+    }
+
+    .cli-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+
+    .cli-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .cli-card p {
+      font-size: 0.95rem;
+      color: #ccc;
+      margin-bottom: 0.5rem;
+    }
+
+    a.card-link {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .recommended-badge {
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      background: #00ff6e;
+      color: black;
+      font-weight: bold;
+      font-size: 0.8rem;
+      padding: 0.3rem 0.7rem;
+      border-radius: 6px;
+      box-shadow: 0 0 12px #00ff6e;
+      transform: rotate(-8deg);
+      z-index: 5;
+    }
+
+    .cli-card-wrapper {
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="your_cli_image.png" alt="CLI Preview">
+    <h2>COMMAND LINE INTERFACE MODEL</h2>
+    <p>Explore our interface in its raw form</p>
+    <a href="index.html"><button class="explore-btn">Go back to main page</button></a>
+  </div>
+
+  <section id="cli-showcase">
+    <h1>Latest CLI Models</h1>
+    <div class="cli-grid">
+
+    
+      <a href="CLI1_DISPLAY.html" class="card-link">
+        <div class="cli-card-wrapper">
+          <div class="recommended-badge">RECOMMENDED</div>
+          <div class="cli-card">
+            <img src="CLI_FULLBLOOM_ICON.png" alt="CLI Model 1">
+            <h3>OasisNX FULL BLOOM V1.0.0</h3>
+            <p>#Terminal #Best #Flagship </p>
+            <p>The best command interface with built-in mods and read file perms (update files is in beta).</p>
+          </div>
+        </div>
+      </a>
+
+      
+      <a href="CLI2_DISPLAY.html" class="card-link">
+        <div class="cli-card">
+          <img src="CLI_BLOOM_OVERGROWN.png" alt="CLI Model 2">
+          <h3>BLOOM_OVERGROWN V0.0.9[BETA]</h3>
+          <p>#DevTools #Power</p>
+          <p>Contains most features of our flagship model, all text will be green hacker themed<br>later on we will an alternate mod route limited to this model </p>
+        </div>
+      </a>
+
+      
+      <a href="CLI3_DISPLAY.html" class="card-link">
+        <div class="cli-card">
+          <img src="CLI_DIMINISHED_CELESTIAL.png" alt="CLI Model 3">
+          <h3>DIMINISHED_CELESTIAL V1.0.0</h3>
+          <p>#Fastest #Basic #Minimal</p>
+          <p>Our simplest and fastest model doesnt support mods but ensures the fastest responses, simplest possible model</p>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+</body>
+</html>

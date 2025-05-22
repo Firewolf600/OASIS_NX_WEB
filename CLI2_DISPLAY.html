@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CLI Terminal AI Showcase</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #1b1b1b;
+      color: #f0f0f0;
+    }
+
+    .header {
+      background: #111;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 2.8rem;
+      margin: 0;
+    }
+
+    .cover {
+      width: 100%;
+      max-height: 480px;
+      object-fit: cover;
+      border-bottom: 4px solid #2a2a2a;
+    }
+
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 2rem;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .main-info {
+      flex: 3;
+      min-width: 300px;
+    }
+
+    .sidebar {
+      flex: 1;
+      min-width: 250px;
+      background: #2c2c2c;
+      padding: 1rem;
+      border-radius: 8px;
+      height: fit-content;
+    }
+
+    .desc {
+      margin-top: 1rem;
+      line-height: 1.7;
+      font-size: 1.05rem;
+    }
+
+    .download-btn {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.9rem 1.6rem;
+      background: #ff365e;
+      color: white;
+      font-weight: bold;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .download-btn:hover {
+      background: #e22c50;
+    }
+
+    .screenshots {
+      margin-top: 2.5rem;
+      display: flex;
+      gap: 1rem;
+      overflow-x: auto;
+    }
+
+    .screenshots img {
+      height: 220px;
+      border-radius: 6px;
+      object-fit: cover;
+    }
+
+    .sidebar ul {
+      padding-left: 1.2rem;
+      line-height: 1.8;
+      font-size: 1rem;
+      list-style: disc;
+    }
+
+    .sidebar h3 {
+      margin-top: 0;
+    }
+
+    .sidebar p {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    @media (max-width: 900px) {
+      .content {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>CLI Terminal AI</h1>
+  </div>
+
+  <img class="cover" src="https://via.placeholder.com/1200x480.png?text=CLI+AI+Cover" alt="CLI Cover Image">
+
+  <div class="content">
+    <div class="main-info">
+      <h2>BLOOM_OVERGROWN V0.0.9[BETA]</h2>
+      <p class="desc">
+        This is a model of ours which we plan to to do some major updates later on , currently its almost the same as our flagship model 'FULL_BLOOM V1.0.0' But the theme is made to match the hacker style <br> later we will be adding mods exclusive to this model and some other features. 
+      </p>
+
+      <a href="cli_model_download.zip" class="download-btn">⬇ Download .ZIP</a>
+
+      <div class="screenshots">
+        <img src="CLI_BLOOM_OVERGROWN.png" alt="Screenshot 1">
+        <img src="https://via.placeholder.com/400x220.png?text=Screenshot+2" alt="Screenshot 2">
+        <img src="https://via.placeholder.com/400x220.png?text=Screenshot+3" alt="Screenshot 3">
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <h3>Tags</h3>
+      <ul>
+        <li>Terminal</li>
+        <li>CLI</li>
+        <li>Offline AI</li>
+        <li>Developer Tools</li>
+      </ul>
+      <p>Last updated: May 2025</p>
+    </div>
+  </div>
+
+</body>
+</html>

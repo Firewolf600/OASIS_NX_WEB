@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OasisNX Staff Panel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      color: rgb(165, 255, 255);
+      padding: 2rem;
+      background: url("testimg1.png") no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.75);
+      z-index: -1;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-weight: 800;
+      color: #ffffff;
+      text-shadow: 0 0 10px #0ff;
+    }
+
+    .dashboard {
+      max-width: 800px;
+      margin: auto;
+      background: rgba(0, 0, 0, 0.65);
+      border: 1px solid #0ff3;
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: 0 0 20px #0ff4;
+    }
+
+    .section h2 {
+      color: #fff;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #0ff4;
+      padding-bottom: 0.5rem;
+    }
+
+    .downloads a {
+      display: block;
+      margin: 1rem 0;
+      padding: 0.75rem 1.2rem;
+      background: #0ff;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: 0.2s ease;
+      box-shadow: 0 0 10px #0ff6;
+    }
+
+    .downloads a:hover {
+      background: #00e5e5;
+      transform: scale(1.02);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    input, textarea {
+      padding: 0.75rem;
+      border: none;
+      border-radius: 5px;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    button[type="submit"] {
+      padding: 0.75rem;
+      background: #0ff;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0 0 10px #0ff8;
+    }
+
+    button[type="submit"]:hover {
+      background: #00e5e5;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #bbb;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>OASISNX // STAFF PANEL</h1>
+
+  <div class="dashboard">
+
+    <div class="section downloads">
+      <h2>📂 Download Internal Files</h2>
+      <a href="reports/report1.pdf" download>Download: Internal Report 1</a>
+      <a href="reports/report2.pdf" download>Download: Internal Report 2</a>
+      <a href="reports/user-guide.pdf" download>Download: Staff User Guide</a>
+    </div>
+
+    <div class="section">
+      <h2>Staff  support message</h2>
+      <form action="https://formspree.io/f/xvgakbgp" method="POST">
+        <label for="name">Your Name</label>
+        <input type="text" name="name" required placeholder="e.g. John Doe" />
+
+        <label for="message">Your Message</label>
+        <textarea name="message" rows="5" required placeholder="Type your message here..."></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 OASISNX. Confidential Use Only.
+  </footer>
+
+</body>
+</html>
